@@ -1,0 +1,10 @@
+[Unit]
+Description=Peaq Node
+[Service] 
+User=root
+ExecStart=/root/peaq/start.sh
+WorkingDirectory=/root/peaq
+Restart=always
+RestartSec=60
+[Install]
+WantedBy=multi-user.target
